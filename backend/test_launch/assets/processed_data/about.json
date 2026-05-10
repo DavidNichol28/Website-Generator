@@ -1,0 +1,223 @@
+{
+  "title": "about.md",
+  "content": [
+    {
+      "indent": 0,
+      "line_type": "H1",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Web Development Is A Scam"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Divider",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Are we really gonna pay for this ancient (and garbage) tech service forever?"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Websites are ancient tech."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Stop being a part of the problem."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "The Problem We're Solving"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "The website industry has made it such that people need a lot of knowledge, skill, and effort to get a website running, or be willing to pay a megacorp money to have the same hyper-consumerist flashbang of stock images of people smiling miserably and data-farming popups."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Combine this with the diabolical trap that is the ease-of-setup and absolute technical nightmare that one of those websites become once you start doing stuff with it..."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Our Solution"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "People need to write out the stuff they need to write in order to have anything to put on the website, right?"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "So, if someone were to "
+          }
+        },
+        {
+          "Bold": {
+            "String": "actually care"
+          }
+        },
+        {
+          "Plain": {
+            "String": " about the "
+          }
+        },
+        {
+          "Bold": {
+            "String": "user"
+          }
+        },
+        {
+          "Plain": {
+            "String": " and nobody else... "
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "How would they go about making it as simple as possible to take that writing and transform it into a website?"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "We take that writing, as it is, ask that it be written in MarkDown (or our ExtendedMarkDown which is MD with stuff for a website that MD doesn't have), and turn it straight into a website. The pages and navigation is all handled programmatically crawling to see how the writing is set up in the directory that is its indicated root."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "In English: We turn that writing straight into a fully functional, nested navigation (if they want) website."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    }
+  ]
+}

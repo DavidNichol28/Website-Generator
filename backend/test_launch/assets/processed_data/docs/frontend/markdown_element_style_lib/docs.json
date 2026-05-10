@@ -1,0 +1,1482 @@
+{
+  "title": "docs.md",
+  "content": [
+    {
+      "indent": 0,
+      "line_type": "ConfigVariable",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "work_title=\"Docs Frontend Markdown Element Style Lib Docs\""
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H1",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Markdown Element Style Docs"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Purpose"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "This library provides customizable styling options for use with the Markdown Elements Library."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Usage"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Import the package in your Flutter application:"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "import 'package:markdown_element_style_lib/markdown_element_style_lib.dart';"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "TextStyleSet"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "The TextStyleSet class defines text styling for different markdown elements."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H4",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Properties"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "h1"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": TextStyle for heading level 1"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "h2"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": TextStyle for heading level 2"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "h3"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": TextStyle for heading level 3"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "h4"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": TextStyle for heading level 4"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "h5"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": TextStyle for heading level 5"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "h6"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": TextStyle for heading level 6"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "paragraph"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": TextStyle for paragraph text"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "orderedList"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": TextStyle for ordered lists"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "unorderedList"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": TextStyle for unordered lists"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "link"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": TextStyle for hyperlinks"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H4",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Methods"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H5",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Constructor"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Plain": {
+            "String": "TextStyleSet({"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "TextStyle? h1,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "TextStyle? h2,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "TextStyle? h3,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "TextStyle? h4,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "TextStyle? h5,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "TextStyle? h6,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "TextStyle? paragraph,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "TextStyle? orderedList,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "TextStyle? unorderedList,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "TextStyle? link,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "})"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H5",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "updateFromJson"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Updates styles from a JSON map:"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "TextStyleSet updateFromJson(Map<String, dynamic> json)"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H5",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "getStyle"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Retrieves style for a specific element type:"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "TextStyle getStyle(String elementTypeAsString)"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H5",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Factory Methods"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "TextStyleSet.cyberpunk()"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": Creates a cyberpunk-themed style set with neon colors and shadows"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "TextPaddingSet"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "The TextPaddingSet class defines vertical padding for different markdown elements."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H4",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Properties"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "h1"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": Padding for heading level 1"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "h2"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": Padding for heading level 2"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "h3"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": Padding for heading level 3"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "h4"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": Padding for heading level 4"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "h5"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": Padding for heading level 5"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "h6"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": Padding for heading level 6"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "paragraph"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": Padding for paragraph text"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "orderedList"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": Padding for ordered lists"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "unorderedList"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": Padding for unordered lists"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "link"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": Padding for hyperlinks"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H4",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Methods"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H5",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Constructor"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Plain": {
+            "String": "PaddingSet({"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "double? h1,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "double? h2,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "double? h3,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "double? h4,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "double? h5,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "double? h6,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "double? paragraph,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "double? orderedList,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "double? unorderedList,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "double? link,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "})"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H5",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "updateFromJson"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Updates padding values from a JSON map:"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "PaddingSet updateFromJson(Map<String, dynamic> json)"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H5",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "getPadding"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Creates a container with the appropriate vertical padding for an element:"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "Container getPadding(String elementTypeAsString, Widget childWidget)"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "BackgroundColorStyleSet"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "The BackgroundColorStyleSet class defines background colors for different elements of a markdown document."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H4",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Properties"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "main"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": Background color for the main content area"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "nav"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": Background color for navigation elements"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "footer"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": Background color for the footer"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "codeBlock"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": Background color for code blocks"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "quote"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": Background color for quotes/blockquotes"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H4",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Methods"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H5",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Constructor"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Plain": {
+            "String": "BackgroundColorStyleSet({"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Color? main,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Color? nav,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Color? footer,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Color? codeBlock,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Color? quote,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "})"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H5",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "updateFromJson"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Updates colors from a JSON map:"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "BackgroundColorStyleSet updateFromJson(Map<String, dynamic> json)"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H5",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Factory Methods"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "BackgroundColorStyleSet.cyberpunk()"
+          }
+        },
+        {
+          "Plain": {
+            "String": ": Creates a cyberpunk-themed color set with dark backgrounds"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    }
+  ]
+}

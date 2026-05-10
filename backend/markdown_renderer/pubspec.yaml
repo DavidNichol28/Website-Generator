@@ -1,0 +1,39 @@
+name: markdown_renderer
+description: "A new Flutter package project."
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ^3.6.0
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  toml: ^0.16.0
+  riverpod: ^2.6.1
+  rf_navbar:
+    path: /home/arst/DavidNichol/Modules/RebuildForge/RebuildForgeUI/rf_navbar
+  markdown_element_style_lib:
+    path: /home/arst/DavidNichol/Endeavors/website_generator/frontend/markdown_element_style_lib
+  markdown_element_lib:
+    path: /home/arst/DavidNichol/Endeavors/website_generator/frontend/markdown_element_lib
+  personal_nav_bar:
+    path: /home/arst/DavidNichol/Modules/Flutter/modules/personalized_widget_handlers/personal_nav_bar
+  build_runner: ^2.4.15
+  json_annotation: ^4.9.0
+  json_serializable: ^6.9.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your package, add an assets section, like this:
+  assets:
+
+
+# END

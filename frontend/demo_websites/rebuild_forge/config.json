@@ -1,0 +1,70 @@
+{
+    "navbar": [
+		{
+		    "title": "Rebuild Forge",
+		    "location": "/",
+		    "children": []
+		},
+	        {
+		    "title": "blog",
+		    "location": "/blog",
+		    "children": [
+
+			{
+			    "title": "Website Industry",
+			    "location": "/blog/website_industry",
+			    "children": [
+				{
+				    "title": "Investigation Angles",
+				    "location": "/blog/website_industry/investigation_angles",
+				    "children": []
+				}
+			    ]
+			},
+			{
+			    "title": "Digital Infrastructure",
+			    "location": "/blog/digital_infrastructure",
+			    "children": []
+			},
+			{
+			    "title": "Free Open And Accessible Digital Public Works",
+			    "location": "/blog/free_open_and_accessible_digital_public_works",
+			    "children": []
+			},
+			{
+			    "title": "Defining The Problem Set",
+			    "location": "/blog/defining_the_problem_set",
+			    "children": []
+			}			
+		    ]
+		    
+		},
+	        {
+		    "title": "projects",
+		    "location": "/projects",
+		    "children": []
+		},
+		{
+		    "title": "mission",
+		    "location": "/mission_statement",
+		    "children": []
+		},
+		{
+		    "title": "the stack",
+		    "location": "/tech_stack",
+		    "children": []
+		},
+		{
+		    "title": "ethos",
+		    "location": "/ethos",
+		    "children": []
+		}
+
+,
+		{
+		    "title": "about",
+		    "location": "/about",
+		    "children": []
+		}
+	]
+}

@@ -1,0 +1,65 @@
+{
+  "title": "docs.md",
+  "content": [
+    {
+      "indent": 0,
+      "line_type": "ConfigVariable",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "work_title=\"Docs Backend Build Stuff File Handling Docs\""
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H1",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "File Handling Docs"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Purpose"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Handles all the complexities of the setting of the data related to the build process on-system as well as setting up the website's config according to whatever this program did to store the stuff, so, yeah..."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Basic Example"
+          }
+        }
+      ]
+    }
+  ]
+}

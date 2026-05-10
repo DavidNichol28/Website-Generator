@@ -1,0 +1,7 @@
+[package]
+name = "website_generator_monorepo"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+cli_handler = { path = "./backend/build_stuff/cli_handler" }

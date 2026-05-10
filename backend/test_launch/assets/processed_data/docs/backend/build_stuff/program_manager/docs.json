@@ -1,0 +1,372 @@
+{
+  "title": "docs.md",
+  "content": [
+    {
+      "indent": 0,
+      "line_type": "ConfigVariable",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "work_title=\"Docs Backend Build Stuff Program Manager Docs\""
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H1",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Program Manager Docs"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Purpose"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Handles running the build process calling "
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "build_process",
+            "link_type": "work_title",
+            "pointer": "Docs Backend Build Stuff Build Process Docs"
+          }
+        },
+        {
+          "Plain": {
+            "String": " and handles the launching for testing it in dev mode."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "It is to be expanded as an interface between "
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "cli_handler",
+            "link_type": "work_title",
+            "pointer": "Docs Backend Build Stuff Cli Handler Docs"
+          }
+        },
+        {
+          "Plain": {
+            "String": " and... anything that makes sense from a UI perspective - currently that is handling the build and running devmode."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Basic Example"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Literally the whole module as of now: "
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "use build_process::build_process::build_process_handler::build_handler;"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "use std::fs;"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "use std::path::Path;"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "use std::process::Command;"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "pub fn build(target_location: &Path, output_dir: &Path, build_command: &str) -> String {"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "build_handler(target_location, output_dir, build_command);"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "return String::from(\"build is done\");"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "}"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "pub fn launch(build_directory: &Path, build_command: &str) {"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "// let build_command = format!(\"run {} {}\", build_directory.display(), build_command);"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "println!(\"build_command: {}\", build_command);"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "println!(\"build_directory: {:#?}\", build_directory);"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "let status = Command::new(\"flutter\")"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 4,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ".args(&build_command.split_whitespace().collect::<Vec<&str>>())"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 4,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ".current_dir(build_directory)"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 4,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ".status()"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 4,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ".expect(\"Failed to run Flutter build\");"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "if !status.success() {"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 4,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "panic!(\"Flutter run failed\");"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "}"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "}"
+          }
+        }
+      ]
+    }
+  ]
+}

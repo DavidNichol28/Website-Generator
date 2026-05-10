@@ -1,0 +1,897 @@
+{
+  "title": "docs.md",
+  "content": [
+    {
+      "indent": 0,
+      "line_type": "ConfigVariable",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "work_title=\"Docs Backend Markdown Renderer Docs\""
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H1",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Markdown Renderer User Docs"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Purpose"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Takes in the intermediary data processed and stored by "
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "Markdown Element Lib.",
+            "link_type": "work_title",
+            "pointer": "Docs Backend Markdown Element Lib Overview"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "This is used to build a website out by passing data to "
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "Frontend Markdown Element Lib",
+            "link_type": "work_title",
+            "pointer": " Docs Frontend Markdown Element Lib Overview"
+          }
+        },
+        {
+          "Plain": {
+            "String": " and "
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "Frontend Markdown Element Style Lib",
+            "link_type": "work_title",
+            "pointer": " Docs Frontend Markdown Element Style Lib Overview"
+          }
+        },
+        {
+          "Plain": {
+            "String": " and putting the rest of it together herein."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Also responsible for repeating components like the RFNavBar (more soon like RFFooter, RFButton, etc)."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Basic Example"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H6",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Code Snippet Start..."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "final renderer = MarkdownRenderer(configPath: \"path/to/root/of/intermediary/data/directory\");"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H6",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Code Snippet End..."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "bla bla"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Data Structures"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "MarkdownRenderer"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "MarkdownRenderer takes in the path to the intermediary data and passes it to WebsiteHandler."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H4",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Structure"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "class MarkdownRenderer {"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "String configPath,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "}"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "WebsiteHandler"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "WebsiteHandler takes in the path from MarkdownRenderer and handles getting the site built as well as running the loading spinner."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Turns the stored data into a Map<String, dynamic> for WebsiteBuilder."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H4",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Structure"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "class MarkdownRenderer {"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "String configPath,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "}"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "WebsiteBuilder"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "WebsiteBuilder takes in the loaded intermediary data from WebsiteHandler, and it calls and uses the Riverpod state stuff and components (like RFNavBar) to get everything ready to be passed to create MarkdownPageRenderer from "
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "Frontend Markdown Element Lib.",
+            "link_type": "work_title",
+            "pointer": " Docs Frontend Markdown Element Lib Overview"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H4",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Structure"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "class WebsiteBuilder {"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "String config,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "}"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Functions"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "loadConfig"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "_processManifest"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "State"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "WebsiteData"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Holds all the data for the website (NOTE: can probably drop all elements prepended with \"action\" and just pass them in for creation so it doesn't hold all that all the time...)"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Returns WebsiteBuilder to render when the config is ready and remains there to manage state."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "class WebsiteData {"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "final Map<String, MarkdownPage> webDirectory;"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "final MarkdownPage? currentPage;"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "final List<MarkdownPage> pageStack;"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "final String? currentDirectory;"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "final Map<String, dynamic> nexusKey;"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "final List<String> actionWidgetStringsLists;"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "// This gets passed into VoidCallback to Navigator"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "final List<String> actionWidgetCallbackValuesLists;"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "final Map<String, List<String>> actionWidgetStringsListsMap;"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "final Map<String, List<String>> actionWidgetCallbackValuesListsMap;"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "}"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H4",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Methods"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H5",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "updateWebDirectory"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "This pumps all the config data in - should only be called once."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H5",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "updatePage"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "This takes in data to update the pageStack and currentPage directly (helper function)."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H5",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "figureOutBackPage"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "This gets the last page the user was on from pageStack, and sends that and pageStack (minus last element) to updatePage."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H5",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "handleChangingCurrentPage"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "This takes an internal NexusPointer pointer and figures out which page to render and updates pageStack and currentPage (by sending the new values to updatePage) in doing so."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "StyleData"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Gathers the styling classes from "
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "Frontend Markdown Element Style Lib",
+            "link_type": "work_title",
+            "pointer": " Docs Frontend Markdown Element Style Lib Overview"
+          }
+        },
+        {
+          "Plain": {
+            "String": " and inits them."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "class StyleData {"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "final TextStyleSet textStyleSet;"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "final BackgroundColorStyleSet backgroundColorStyleSet;"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "}"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "PaddingData"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Honestly, don't know what the hell is going on here. Needs attention but works, apparently. It may be a placeholder or something..."
+          }
+        }
+      ]
+    }
+  ]
+}

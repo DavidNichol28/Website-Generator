@@ -1,0 +1,92 @@
+{
+  "title": "docs.md",
+  "content": [
+    {
+      "indent": 0,
+      "line_type": "ConfigVariable",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "work_title=\"Docs Backend Build Stuff Markdown Backend Utilities Docs\""
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H1",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Markdown Backend Utilities Docs"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Purpose"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Utilities that can be in a lot of places that have no deps."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Basic Example"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "extract_file_name_from_path(file_path: String)"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "is_emacs_file(path: &Path)"
+          }
+        }
+      ]
+    }
+  ]
+}

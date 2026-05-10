@@ -1,0 +1,5 @@
+    - [ ] Basically, make a function on relevant classes that, instead of rendering, take the text of the code in the render function with the computed logic hardcoded in and returns itself until you get the whole program contiguously in one file RTG.
+   - [ ] Must have Rust .md file syntax checker for all deez bugz
+   - [ ] Make the navbar titles have a key that holds the page it should go to
+    - [ ] Automatically links to the overview at the same node where the config being read is
+

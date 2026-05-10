@@ -1,0 +1,203 @@
+{
+  "title": "linking.md",
+  "content": [
+    {
+      "indent": 0,
+      "line_type": "ConfigVariable",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "work_title=\"Walkthrough Syntax Linking\""
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H1",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Syntax for Modified Markdown Linking"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Syntax for linking"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "NexusPointer"
+          }
+        },
+        {
+          "Plain": {
+            "String": " = \\$\\{\"String for link\"link_type:link_pointer\\}\\$"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "String for link"
+          }
+        },
+        {
+          "Plain": {
+            "String": " = The text displayed for link, duh"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "link_type"
+          }
+        },
+        {
+          "Plain": {
+            "String": " = enum { work_title, link }"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "work_title"
+          }
+        },
+        {
+          "Plain": {
+            "String": " = Uses work_name (variable set in md file)"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "link"
+          }
+        },
+        {
+          "Plain": {
+            "String": " = Goes to external url: \"https://www...\""
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "link_pointer"
+          }
+        },
+        {
+          "Plain": {
+            "String": " = String used to specify target"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Can be a url (used with \"link\")"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Can link to a file via setting work_title as a "
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "config variable",
+            "link_type": "work_title",
+            "pointer": "Walkthrough Syntax Variables"
+          }
+        },
+        {
+          "Plain": {
+            "String": " (used with \"work_title\")"
+          }
+        }
+      ]
+    }
+  ]
+}

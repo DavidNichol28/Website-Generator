@@ -1,0 +1,1277 @@
+{
+  "title": "docs.md",
+  "content": [
+    {
+      "indent": 0,
+      "line_type": "ConfigVariable",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "work_title=\"Docs Frontend Markdown Element Lib Docs\""
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H1",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Markdown Element Lib (Frontend) Docs"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Purpose"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "The Markdown Element Library is a set of Flutter widgets and utilities designed to render markdown content with customizable styling. It provides a structured way to display markdown content in Flutter applications."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "NOTE: Designed to be used by having ExtendedMarkdownSyntax data first processed by ExtendedMarkdownSyntaxParser to be fed into WebsiteBuilder which calls this package."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Usage"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "```"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "import 'package:markdown_element_lib/markdown_element_lib.dart';"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "// Create a markdown page with content"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "MarkdownPage page = MarkdownPage("
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "title: \"My Page\","
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "path: \"/example\","
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "content: ["
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "MarkdownLineElement("
+          }
+        }
+      ]
+    },
+    {
+      "indent": 3,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "indent: 0,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 3,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "type: MarkdownLineElementType.h1,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 3,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "items: [Plain(StringToken(\"Hello World\"))],"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 3,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "textStyle: TextStyleSet.cyberpunk(),"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 3,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "textPadding: TextPaddingSet(),"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "),"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "// Add more elements"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "],"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "attributeManager: TreeLocationAttributeManager.newEmpty(),"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ");"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "// Render the page"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "MarkdownPageRenderer("
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "markdownPageContent: page.content,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "navBar: MyNavBar(),"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "backgroundColorStyleSet: BackgroundColorStyleSet(),"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ");"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "```"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Main Components"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "MarkdownPage"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "A container for a complete markdown document."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "Properties:"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`title`: The title of the page"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`path`: URL path for the page"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`content`: List of MarkdownLineElement objects that make up the page"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`attributeManager`: Manages styling and navigation attributes for the page"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "Methods:"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`fromJson()`: Creates a MarkdownPage from JSON data"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "MarkdownPageRenderer"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "A stateless widget that renders a complete markdown page with navigation and styling."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "Properties:"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`markdownPageContent`: List of MarkdownLineElement objects to display"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`navBar`: Optional navigation bar widget"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`backgroundColorStyleSet`: Styling for the page background"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "MarkdownLineElement"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "A widget that represents a single line or block of markdown content."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "Properties:"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`indent`: Indentation level"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`type`: Type of element (heading, paragraph, list, etc.)"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`items`: List of MarkdownToken objects that make up the content"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`textStyle`: Styling for the text"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`textPadding`: Padding settings"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "Methods:"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`fromJson()`: Creates a MarkdownLineElement from JSON data"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`build()`: Renders the element based on its type"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "MarkdownToken"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "An abstract class that represents different types of text formatting."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "Implementations:"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`Plain`: Regular text"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`Bold`: Bold text"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`Italics`: Italic text"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`BoldItalics`: Bold and italic text"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`NexusPointerToken`: Clickable links"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "Methods:"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`getString()`: Returns the text content"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`getType()`: Returns the formatting type"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`fromJson()`: Factory method to create tokens from JSON"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "TreeLocationAttributeManager"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Manages styling and navigation attributes for a specific location in the content tree."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "Properties:"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`location`: Path or identifier for the location"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`nav`: Navigation data"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`textStyle`: Text styling settings"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`backgroundColorStyle`: Background color settings"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "Methods:"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`fromJson()`: Updates attributes from JSON data"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`newEmpty()`: Creates a default empty manager"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Enums"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "MarkdownLineElementType"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Defines the different types of block elements:"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`h1`, `h2`, `h3`, `h4`, `h5`, `h6`: Heading levels"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`paragraph`: Regular paragraph"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`divider`: Horizontal divider"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`orderedList`: Numbered list item"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`unorderedList`: Bullet list item"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`link`: Hyperlink"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`hidden`: Hidden content"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "MarkdownTokenType"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Defines the different types of text formatting:"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`plain`: Regular text"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`bold`: Bold text"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`italics`: Italic text"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`boldItalics`: Bold and italic text"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "`nexusPointer`: Clickable link"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    }
+  ]
+}

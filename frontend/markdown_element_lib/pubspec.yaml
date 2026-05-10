@@ -1,0 +1,20 @@
+name: markdown_element_lib
+description: A starting point for Dart libraries or applications.
+version: 1.0.0
+# repository: https://github.com/my_org/my_repo
+
+environment:
+  sdk: ^3.6.1
+
+# Add regular dependencies here.
+dependencies:
+  flutter:
+    sdk: flutter
+  toml: ^0.16.0
+  markdown_element_style_lib:
+    path: "/home/arst/DavidNichol/Endeavors/website_generator/frontend/markdown_element_style_lib"
+ # path: ^1.8.0
+
+dev_dependencies:
+  lints: ^5.0.0
+  test: ^1.24.0

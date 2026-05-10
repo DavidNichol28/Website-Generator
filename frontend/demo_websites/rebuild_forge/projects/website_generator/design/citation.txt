@@ -1,0 +1,32 @@
+- [ ] struct Citation {
+           text: String,
+		   key: usize,
+	 }
+   - [ ] modify MarkdownPage as so:
+           MarkdownPage {
+	     citation_data: HashMap<
+	       usize, Vec<MarkdownLineElement>
+	     >,
+	     ...
+	   } // MarkdownPage
+	       // .citation_data
+	       // [Citation.key]
+	       // ^^ Returns citation to be rendered 
+    - [ ] Create handler, citationHandler, that:
+     - [ ] Inits Vec<MarkdownLineElement>? = null:
+      - [ ] if null => render nothing over page
+      - [ ] if !null => render citation pointed to
+       - [ ] starts as pop-up modal, CitationModal
+       - [ ] can be expanded to full page
+       - [ ] closes by "citationHandler = null;"
+    - [ ] Has syntax that is handled by:
+     - [ ] Making it a distinct type of link
+      - [ ] Looks (is rendered) differently
+      - [ ] clicking citation link loads data it points to into citationHandler opening CitationModal
+      - [ ] Add to syntax (duh)
+       - [ ] For file structure:
+	- [ ] Use file extension: ".citations"
+	- [ ] Use identical name to file citing it
+	 - [ ] IE: "fuck.md" and "fuck.citations"
+	- [ ] When processing, checks 1-to-1 relationship with human-readable citation ids between files before creating citation_data: HashMap<usize, Vec<MarkdownLineElements>>...(see next point)...
+	- [ ] Stored in MarkdownPage.citation_data

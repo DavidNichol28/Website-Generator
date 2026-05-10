@@ -1,0 +1,662 @@
+{
+  "title": "overview.md",
+  "content": [
+    {
+      "indent": 0,
+      "line_type": "H1",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Your Writing, Liberated"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "The modern web is a trap. Bloated frameworks, paywalled tools, and endless busywork keep people dependent on an industry that profits from making websites harder than they should be."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Create A Website With Just MarkDown Syntax!"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "This project is a different path. It doesn’t replace the whole web stack (yet), but it cuts straight through the nonsense:"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "if you can write in Markdown, you can publish a website."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Right now, it’s a prototype. That means:"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "If you’re semi-tech-competent, you can already use it to turn writing into a site."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "If you’re a dev, you can help make it stronger, cleaner, and freer for everyone."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Working The Software"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "The "
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "walkthrough section",
+            "link_type": "work_title",
+            "pointer": "Walkthrough Overview"
+          }
+        },
+        {
+          "Plain": {
+            "String": " cover the "
+          }
+        },
+        {
+          "Italics": {
+            "String": "3 main aspects"
+          }
+        },
+        {
+          "Plain": {
+            "String": " of using this: Website, Syntax, and Build."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Website"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "What a site looks like under the hood — structure, nav, header, footer. You won’t need most of this, but it’s here if you care."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "Website Section",
+            "link_type": "work_title",
+            "pointer": "Walkthrough Website Overview"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Syntax"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Extended Markdown: regular Markdown, plus the few extra tricks a website actually needs."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "Syntax Section",
+            "link_type": "work_title",
+            "pointer": "Walkthrough Syntax Overview"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Build"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "How to turn your writing into a live site. This is where the “prototype” part shows — you’ll need a touch of IT know-how, but nothing wild."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "Build Section",
+            "link_type": "work_title",
+            "pointer": "Walkthrough Build Overview"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Progress"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "What’s Next"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "Check the roadmap",
+            "link_type": "work_title",
+            "pointer": "Progress Todo Overview"
+          }
+        },
+        {
+          "Plain": {
+            "String": " — see where we’re headed, and maybe even help steer."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "What’s Done"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "Version history.",
+            "link_type": "work_title",
+            "pointer": "Progress Versions Overview"
+          }
+        },
+        {
+          "Plain": {
+            "String": " Proof that this thing is alive and moving forward."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Progress Overview"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "The big picture of where we stand right now.",
+            "link_type": "work_title",
+            "pointer": "Progress Overview"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Technical Stuff"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "This is all FOSS, and designed with the intention of being modular to be as applicable to as many use-cases as possible."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "The Docs"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "I'm sorry.",
+            "link_type": "work_title",
+            "pointer": "Docs Overview"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "The Stack"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "See how the ethos that gave birth to this mission translates into "
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "applied tooling.",
+            "link_type": "link",
+            "pointer": "rebuild-forge.netlify.app/the-stack"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "About Who Made This"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Rebuild Forge"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "This project was created and is maintained under the umbrella of the "
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "Rebuild Forge Foundation.",
+            "link_type": "link",
+            "pointer": "rebuild-forge.netlify.app"
+          }
+        },
+        {
+          "Plain": {
+            "String": " - a collective effort to dismantle Techno-Feudalism and replace it with free tools built for people, not profit, in order to help bring about a Free, Open, and Accessible Public Digital Infrastructure."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Joining up"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H4",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Join the Project"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Wanna help? Any ideas or questions concerning anything are welcome. Email or Discord me. Tell me about yourself, just don't make it like a resume."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H4",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Join the Movement"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Check out "
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "the Rebuild Forge website",
+            "link_type": "link",
+            "pointer": "rebuild-forge.netlify.app"
+          }
+        },
+        {
+          "Plain": {
+            "String": " for information about the mission to destroy Techno-Feudalism."
+          }
+        }
+      ]
+    }
+  ]
+}

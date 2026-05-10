@@ -1,0 +1,169 @@
+{
+  "title": "overview.md",
+  "content": [
+    {
+      "indent": 0,
+      "line_type": "ConfigVariable",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "work_title=\"Progress Overview\""
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H1",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Progress"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Divider",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Here is discussed the progress of the project."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Tickets"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "We got "
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "work",
+            "link_type": "work_title",
+            "pointer": "Progress Todo Overview"
+          }
+        },
+        {
+          "Plain": {
+            "String": " set up to be done."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "It will be dynamically pulled to here from a decentralized db to work as a free github so that anyone can see what's going on and help out."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Versions"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "The "
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "versioning stuff",
+            "link_type": "work_title",
+            "pointer": "Progress Versions Overview"
+          }
+        },
+        {
+          "Plain": {
+            "String": " will be here because that stuff can be important in times of crisis (and it looks cool to have all that work documented)."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "V 0.0.0"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Current release of the prototype..."
+          }
+        }
+      ]
+    }
+  ]
+}

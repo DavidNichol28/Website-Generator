@@ -1,0 +1,1081 @@
+{
+  "title": "docs.md",
+  "content": [
+    {
+      "indent": 0,
+      "line_type": "ConfigVariable",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "work_title=\"Docs Backend Markdown Element Lib Docs\""
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H1",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Markdown Element Lib (Backend) Docs"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Purpose"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Takes data in "
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "ExtendedMarkDown syntax",
+            "link_type": "work_title",
+            "pointer": "Walkthrough Syntax Overview"
+          }
+        },
+        {
+          "Plain": {
+            "String": " and turns it into an intermediate format to be passed to "
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "Markdown Element Lib (Frontend)",
+            "link_type": "work_title",
+            "pointer": "Docs Frontend Markdown Element Lib Overview"
+          }
+        },
+        {
+          "Plain": {
+            "String": " to be turned into frontend components."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Basic Example"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H6",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Code Snippet Start..."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "use markdown_element_lib::MarkdownLineElement;"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "fn main() {"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "let md_content = r#\""
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "\\# Hello World"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "This is a paragraph."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "\"#;"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "let elements: Vec<MarkdownLineElement> ="
+          }
+        }
+      ]
+    },
+    {
+      "indent": 4,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "MarkdownLineElement::parse_markdown(md_content);"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "println!(\"{:?}\", elements);"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "}"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H6",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Code Snippet End..."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "This will parse an entire Markdown file into a Vec<MarkdownLineElement>, which can be consumed by the frontend library."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Data Structures"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "MarkdownPage"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "MarkdownPage represents a complete Markdown document with title and content."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H4",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Structure"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "pub struct MarkdownPage {"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "pub title: String,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "pub content: Vec<MarkdownLineElement>,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "}"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "MarkdownLineElement"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "MarkdownLineElement represents a single line in a Markdown document and processes it based on its type."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H4",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Structure"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "pub struct MarkdownLineElement {"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "// Tracks spaces in indentation"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "pub indent: usize,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "// Denotes what type of line (H1-H6, etc)"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "pub line_type: MarkdownLineElementType,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "// Holds pieces of the line according to how they should be rendered"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "pub markdown: Vec<MarkdownToken>,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "}"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "MarkdownLineElementType"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "An enum defining different types of Markdown lines:"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "pub enum MarkdownLineElementType {"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "H1, H2, H3, H4, H5, H6,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Paragraph,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Divider,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "OrderedList,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "UnorderedList,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "ConfigVariable,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "}"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Additions to this type will create a new option to render MarkdownLineElements and will need to be addressed accordingly."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "MarkdownToken"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Holds data to be used in rendering pieces of the inline markdown."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "It recurses into itself until the end which will either be a String(String) or NexusPointer(NexusPointer)."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H4",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Structure"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "pub enum MarkdownToken {"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Italics(Box<MarkdownToken>),"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Bold(Box<MarkdownToken>),"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "BoldItalics(Box<MarkdownToken>),"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Plain(Box<MarkdownToken>),"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "_UseVariable(Box<MarkdownToken>),"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "String(String),"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "NexusPointer(NexusPointer),"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "}"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Additions to MarkdownTokenType will require that this be added to in the appropriate manner."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "MarkdownTokenType"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Represents different inline Markdown formatting elements."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "pub enum MarkdownTokenType {"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Italics,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Bold,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "BoldItalicsStart,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "BoldItalicsEnd,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "NexusPointerStart,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "NexusPointerEnd,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Plain,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "}"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Additions to this type will create a new option to render MarkdownInlineElements and will need to be addressed accordingly."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H3",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "NexusPointer"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "NexusPointer represents a link or reference within the Markdown content."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H4",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Structure"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "pub struct NexusPointer {"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "// What is rendered on-page represented as a hyperlink"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "pub text: String,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "// Tells the parser if the link is internal (\"work_title\") or external (\"link\")"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "pub link_type: String,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "// The string that is the identifying information (a work title or a url) for the link"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "pub pointer: String,"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "}"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Tickets"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Separate the parser code out into its own module and leave this as an actual library."
+          }
+        }
+      ]
+    }
+  ]
+}

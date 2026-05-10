@@ -1,0 +1,149 @@
+{
+  "title": "variables.md",
+  "content": [
+    {
+      "indent": 0,
+      "line_type": "ConfigVariable",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "work_title=\"Walkthrough Syntax Variables\""
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H1",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Syntax for Modified Markdown Variables"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Syntax for variables."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "ConfigVariable"
+          }
+        },
+        {
+          "Plain": {
+            "String": " = @@cofig_var=data (data can be any type)"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "NOTE:"
+          }
+        },
+        {
+          "Plain": {
+            "String": " Every md file should, for filekeeping, have a work_title ConfigVariable for NexusPointer sanity:"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "@@work_title=\"Lorem Ipsum\""
+          }
+        }
+      ]
+    },
+    {
+      "indent": 2,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Improve later to use NexusKey to rename NexusPointers with versioning?"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "SetVariable"
+          }
+        },
+        {
+          "Plain": {
+            "String": " = @$var_name=\"data\""
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "UseVariable"
+          }
+        },
+        {
+          "Plain": {
+            "String": " = @$var_name$@ (can be used as anywhere as String like config_var in ConfigVariable and link_pointer in NexusPointer)"
+          }
+        }
+      ]
+    }
+  ]
+}

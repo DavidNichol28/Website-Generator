@@ -1,0 +1,92 @@
+{
+  "title": "overview.md",
+  "content": [
+    {
+      "indent": 0,
+      "line_type": "ConfigVariable",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "work_title=\"Progress Versions Overview\""
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H1",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Versions"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Divider",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Here is a "
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "chronologically sorted insight",
+            "link_type": "work_title",
+            "pointer": "Progress Versions Timeline"
+          }
+        },
+        {
+          "Plain": {
+            "String": " into the different versions "
+          }
+        },
+        {
+          "Italics": {
+            "String": "(there's only the prototype now)[."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "V 0.0.0"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Looking at it. To be documented... later."
+          }
+        }
+      ]
+    }
+  ]
+}

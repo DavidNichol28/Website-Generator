@@ -1,0 +1,183 @@
+{
+  "title": "markup.md",
+  "content": [
+    {
+      "indent": 0,
+      "line_type": "ConfigVariable",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "work_title=\"Walkthrough Syntax Markup\""
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H1",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Syntax for Modified Markdown Markup"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Syntax for markup"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "Italic"
+          }
+        },
+        {
+          "Plain": {
+            "String": " = \\"
+          }
+        },
+        {
+          "Italics": {
+            "String": "text\\"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "Bold"
+          }
+        },
+        {
+          "Plain": {
+            "String": " = \\"
+          }
+        },
+        {
+          "Italics": {
+            "String": "\\"
+          }
+        },
+        {
+          "Plain": {
+            "String": "text\\"
+          }
+        },
+        {
+          "Italics": {
+            "String": "\\"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "BoldItalic"
+          }
+        },
+        {
+          "Plain": {
+            "String": " = \\"
+          }
+        },
+        {
+          "Italics": {
+            "String": "\\"
+          }
+        },
+        {
+          "Plain": {
+            "String": "_word_\\"
+          }
+        },
+        {
+          "Italics": {
+            "String": "\\"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "Headers"
+          }
+        },
+        {
+          "Plain": {
+            "String": " = #-###### for H1-H6"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Bold": {
+            "String": "Plain"
+          }
+        },
+        {
+          "Plain": {
+            "String": " = nothing"
+          }
+        }
+      ]
+    }
+  ]
+}

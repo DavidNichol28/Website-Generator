@@ -1,0 +1,195 @@
+{
+    "navbar": [
+	
+		{
+		    "title": "GoodMountain",
+		    "location": "/",
+		    "children": []
+		},
+	        {
+		    "title": "blog",
+		    "location": "/blog",
+		    "children": [
+			{
+			    "title": "Walkthrough",
+			    "location": "/blog/walkthrough",
+			    "children": [
+				{
+				    "title": "Build",
+				    "location": "/blog/walkthrough/build",
+				    "children": [
+					{
+					    "title": "Download",
+					    "location": "/blog/walkthrough/build/download",
+					    "children": []
+					},
+					{
+					    "title": "Run Locally",
+					    "location": "/blog/walkthrough/build/run_locally",
+					    "children": []
+					}
+				    ]
+				},
+				{
+				    "title": "Syntax",
+				    "location": "/blog/walkthrough/syntax",
+				    "children": [
+					{
+					    "title": "Markup",
+					    "location": "/blog/walkthrough/syntax/markup",
+					    "children": []
+					},
+					{
+					    "title": "Linking",
+					    "location": "/blog/walkthrough/syntax/linking",
+					    "children": []
+					},
+					{
+					    "title": "Styling",
+					    "location": "/blog/walkthrough/syntax/styling",
+					    "children": []
+					}
+				    ]
+				},
+				{
+				    "title": "Website",
+				    "location": "/blog/walkthrough/website",
+				    "children": [
+					
+				    ]
+				}
+			    ]
+			}
+		    ]
+		},
+	{
+	    "title": "progress",
+	    "location": "/progress",
+	    "children": [
+		{
+		    "title": "Versions",
+		    "location": "/progress/versions/",
+		    "children": [
+			{
+			    "title": "Timeline",
+			    "location": "/progress/versions/timeline/",
+			    "children": []
+			}
+		    ]
+		},
+		{
+		    "title": "To-Do",
+		    "location": "/progress/todo/",
+		    "children": [
+			{
+			    "title": "Tickets",
+			    "location": "/progress/todo/tickets/",
+			    "children": []
+			}
+		    ]
+		}
+	    ]
+	},
+	{
+	    "title": "docs",
+	    "location": "/docs",
+	    "children": [
+		{
+		    "title": "Frontend Docs",
+		    "location": "/docs/frontend",
+		    "children": [
+			{
+			    "title": "Markdown Element Lib (Frontend)",
+			    "location": "/docs/frontend/markdown_element_lib",
+			    "children": []
+			},
+			{
+			    "title": "Markdown Element Style Lib",
+			    "location": "/docs/frontend/markdown_element_style_lib",
+			    "children": []
+			}
+		    ]
+		},
+		{
+		    "title": "Backend Docs",
+		    "location": "/docs/backend",
+		    "children": [
+			{
+			    "title": "Markdown Element Lib (Backend)",
+			    "location": "/docs/backend/markdown_element_lib",
+			    "children": [
+				
+			    ]
+			},
+			{
+			    "title": "Markdown Renderer",
+			    "location": "/docs/backend/markdown_renderer",
+			    "children": [
+				
+			    ]
+			},
+			{
+			    "title": "Test Launch",
+			    "location": "/docs/backend/test_launch",
+			    "children": [
+				
+			    ]
+			},
+			{
+			    "title": "Build Stuff",
+			    "location": "/docs/backend/build_stuff",
+			    "children": [
+				{
+				    "title": "Build Process",
+				    "location": "/docs/backend/build_process",
+				    "children": [
+					
+				    ]
+				},
+				{
+				    "title": "CLI Handler",
+				    "location": "/docs/backend/cli_handler",
+				    "children": [
+					
+				    ]
+				},
+				{
+				    "title": "File Handler",
+				    "location": "/docs/backend/file_handler",
+				    "children": [
+					
+				    ]
+				},
+				{
+				    "title": "Markdown Backend Utilities",
+				    "location": "/docs/backend/markdown_backend_utilities",
+				    "children": [
+					
+				    ]
+				},
+				{
+				    "title": "Program Manager",
+				    "location": "/docs/backend/program_manager",
+				    "children": [
+					
+				    ]
+				}
+			    ]
+			}
+		    ]
+		}
+	    ]
+	},
+	{
+	    "title": "about",
+	    "location": "/about",
+	    "children": []
+	}
+,
+	{
+	    "title": "tech",
+	    "location": "/tech",
+	    "children": []
+	}
+    ]
+}

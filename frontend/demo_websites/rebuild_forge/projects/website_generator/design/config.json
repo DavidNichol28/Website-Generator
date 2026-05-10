@@ -1,0 +1,60 @@
+{
+    "navbar": [
+	{
+	    "title": "Rebuild Forge",
+	    "location": "/"
+	},
+	{
+	    "title": "blog",
+	    "location": "/blog"
+	},
+	{
+	    "title": "projects",
+	    "location": "/projects"
+	},
+	{
+	    "title": "mission",
+	    "location": "/mission_statement"
+	},
+	{
+	    "title": "the stack",
+	    "location": "/tech_stack"
+	}
+    ],
+    "subNav":  [
+	{
+	    "title": "Projects",
+	    "location": "/projects"
+	},
+	{
+	    "title": "Website Generator",
+	    "location": "/projects/website_generator"
+	},
+	{
+	    "title": "Language App",
+	    "location": "/projects/language_app"
+	}
+    ],
+    "subsubnav": [
+	{
+	    "title": "website generator",
+	    "location": "/projects/website_generator"
+	},
+	{
+	    "title": "tech",
+	    "location": "/projects/website_generator/tech"
+	},
+	{
+	    "title": "design",
+	    "location": "/projects/website_generator/design"
+	}
+    ],
+    "subsubsubnav": [
+	{
+	    "title": "design",
+	    "location": "/projects/website_generator/design"
+	}
+
+    ]
+
+}

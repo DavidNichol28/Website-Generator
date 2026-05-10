@@ -1,0 +1,44 @@
+{
+    "navbar": [
+		{
+		    "title": "Rebuild Forge",
+		    "location": "/"
+		    
+		},
+	        {
+		    "title": "blog",
+		    "location": "/blog"
+		    
+		},
+		{
+		    "title": "projects",
+		    "location": "/projects"
+		},
+		{
+		    "title": "mission",
+		    "location": "/mission_statement"
+		},
+		{
+		    "title": "the stack",
+		    "location": "/tech_stack"
+		}
+
+    ],
+    "subNav":  [
+	{
+	    "title": "Blog",
+	    "location": "/blog"	    
+	},
+	{
+	    "title": "Website Industry",
+	    "location": "/blog/website_industry"
+	}
+    ]
+,
+    "subSubNav":  [
+	{
+	    "title": "Website Industry",
+	    "location": "/blog/website_industry"
+	}
+    ]
+}

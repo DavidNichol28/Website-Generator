@@ -1,0 +1,179 @@
+{
+  "title": "overview.md",
+  "content": [
+    {
+      "indent": 0,
+      "line_type": "ConfigVariable",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "work_title=\"Walkthrough Website Overview\""
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "H1",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "How To Set Up Your Website"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Go here if you are looking for the syntax to "
+          }
+        },
+        {
+          "NexusPointer": {
+            "text": "edit the content",
+            "link_type": "work_title",
+            "pointer": "Walkthrough Syntax Overview"
+          }
+        },
+        {
+          "Plain": {
+            "String": " in the files."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "H2",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Format Basics"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "The navigation tree is a direct reflection of the root directory."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 0,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "All directories must have two files:"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Italics": {
+            "String": "overview.md"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "This will act as the home screen for the directory it is found in."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "For instance, the overview.md found in the root of a website directory is the main home screen, but a child directory of that - let's call it, \"blog\" - will display the data in root/blog/overview.md when the navigation goes to root/blog."
+          }
+        }
+      ]
+    },
+    {
+      "indent": 0,
+      "line_type": "UnorderedList",
+      "markdown": [
+        {
+          "Plain": {
+            "String": ""
+          }
+        },
+        {
+          "Italics": {
+            "String": "config.json"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "This will hold data for streamlined components - currently just the navbar"
+          }
+        }
+      ]
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": []
+    },
+    {
+      "indent": 1,
+      "line_type": "Paragraph",
+      "markdown": [
+        {
+          "Plain": {
+            "String": "Currently, there needs to be a config.json in every directory, but the data in it is not used. All the data in the root/config.json is passed down to children, and a future implementation will have the config.json of children just do updates by using basic json overwriting mechanics where all things that aren't overwritten or removed (create \"remove\" call) are left the same and things can be added as well."
+          }
+        }
+      ]
+    }
+  ]
+}

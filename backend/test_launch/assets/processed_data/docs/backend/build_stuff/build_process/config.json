@@ -1,0 +1,104 @@
+{
+    "navbar": [
+		{
+		    "title": "GoodMountain",
+		    "location": "/",
+		    "children": []
+		},
+	        {
+		    "title": "blog",
+		    "location": "/blog",
+		    "children": [
+			{
+			    "title": "Walkthrough",
+			    "location": "/blog/walkthrough",
+			    "children": [
+				{
+				    "title": "Build",
+				    "location": "/blog/walkthrough/build",
+				    "children": [
+					{
+					    "title": "Download",
+					    "location": "/blog/walkthrough/build/download",
+					    "children": []
+					},
+					{
+					    "title": "Run Locally",
+					    "location": "/blog/walkthrough/build/run_locally",
+					    "children": []
+					}
+				    ]
+				},
+				{
+				    "title": "Syntax",
+				    "location": "/blog/walkthrough/syntax",
+				    "children": [
+					{
+					    "title": "Markup",
+					    "location": "/blog/walkthrough/syntax/markup",
+					    "children": []
+					},
+					{
+					    "title": "Linking",
+					    "location": "/blog/walkthrough/syntax/linking",
+					    "children": []
+					},
+					{
+					    "title": "Styling",
+					    "location": "/blog/walkthrough/syntax/styling",
+					    "children": []
+					}
+				    ]
+				},
+				{
+				    "title": "Website",
+				    "location": "/blog/walkthrough/website",
+				    "children": [
+					
+				    ]
+				}
+			    ]
+			}
+		    ]
+		},
+	{
+	    "title": "progress",
+	    "location": "/progress",
+	    "children": [
+		{
+		    "title": "Versions",
+		    "location": "/progress/versions/",
+		    "children": [
+			{
+			    "title": "Timeline",
+			    "location": "/progress/versions/timeline/",
+			    "children": []
+			}
+		    ]
+		},
+		{
+		    "title": "To-Do",
+		    "location": "/progress/todo/",
+		    "children": [
+			{
+			    "title": "Tickets",
+			    "location": "/progress/todo/tickets/",
+			    "children": []
+			}
+		    ]
+		}
+	    ]
+	},
+	{
+	    "title": "about",
+	    "location": "/about",
+	    "children": []
+	}
+,
+	{
+	    "title": "tech",
+	    "location": "/tech",
+	    "children": []
+	}
+    ]
+}
