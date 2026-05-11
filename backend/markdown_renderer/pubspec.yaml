@@ -12,14 +12,11 @@ dependencies:
     sdk: flutter
   toml: ^0.16.0
   riverpod: ^2.6.1
-  rf_navbar:
-    path: /home/arst/DavidNichol/Modules/RebuildForge/RebuildForgeUI/rf_navbar
+  nichol_ui_lib_navbar: 0.0.1
   markdown_element_style_lib:
-    path: /home/arst/DavidNichol/Endeavors/website_generator/frontend/markdown_element_style_lib
+    path: ../../frontend/markdown_element_style_lib
   markdown_element_lib:
-    path: /home/arst/DavidNichol/Endeavors/website_generator/frontend/markdown_element_lib
-  personal_nav_bar:
-    path: /home/arst/DavidNichol/Modules/Flutter/modules/personalized_widget_handlers/personal_nav_bar
+    path: ../../frontend/markdown_element_lib
   build_runner: ^2.4.15
   json_annotation: ^4.9.0
   json_serializable: ^6.9.4

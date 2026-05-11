@@ -31,7 +31,7 @@ dependencies:
   flutter:
     sdk: flutter
   markdown_renderer:
-    path: /home/arst/DavidNichol/Endeavors/website_generator/backend/markdown_renderer
+    path: ../markdown_renderer
   cupertino_icons: ^1.0.8
   flutter_riverpod: ^2.6.1
 

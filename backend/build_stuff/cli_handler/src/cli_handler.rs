@@ -22,11 +22,8 @@ pub struct Cli {
     command: Option<String>,
 }
 
-fn main() {
-    handle_cli();
-}
 fn get_program_data() -> (PathBuf, PathBuf, String) {
-    let project_root = truncate_path(env::current_dir().unwrap().to_string_lossy().into_owned());
+    let project_root = env::current_dir().unwrap().to_string_lossy().into_owned();
     println!("project_root: {}", &project_root);
     let cli = Cli::parse();
 
@@ -143,18 +140,4 @@ where
             }
         }
     }
-}
-// Cuts off three '/' to get to the root
-fn truncate_path(path: String) -> String {
-    // Find the last slash index
-    if let Some(last_index) = path.rfind('/') {
-        // Find the second to last slash index
-        if let Some(last_index) = path[..last_index].rfind('/') {
-            // Find the third to last slash index
-            if let Some(last_index) = path[..last_index].rfind('/') {
-                return path[..last_index].to_string();
-            }
-        }
-    }
-    path // Return original if three slashes aren't found
 }

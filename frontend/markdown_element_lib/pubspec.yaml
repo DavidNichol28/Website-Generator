@@ -12,7 +12,7 @@ dependencies:
     sdk: flutter
   toml: ^0.16.0
   markdown_element_style_lib:
-    path: "/home/arst/DavidNichol/Endeavors/website_generator/frontend/markdown_element_style_lib"
+    path: "../markdown_element_style_lib"
  # path: ^1.8.0
 
 dev_dependencies:

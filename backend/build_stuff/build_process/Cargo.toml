@@ -6,6 +6,6 @@ edition = "2024"
 [dependencies]
 serde = { version = "1.0.217", features = ["derive"] }
 serde_json = "1.0.138"
-markdown_element_lib = { path = "/home/arst/DavidNichol/Endeavors/website_generator/backend/markdown_element_lib" }
-markdown_backend_utilities = { path = "/home/arst/DavidNichol/Endeavors/website_generator/backend/build_stuff/markdown_backend_utilities" }
-file_handling = { path = "/home/arst/DavidNichol/Endeavors/website_generator/backend/build_stuff/file_handling" }
+markdown_element_lib = { path = "../../markdown_element_lib" }
+markdown_backend_utilities = { path = "../markdown_backend_utilities" }
+file_handling = { path = "../file_handling" }

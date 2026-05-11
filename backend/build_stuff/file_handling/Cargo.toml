@@ -4,6 +4,6 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-markdown_element_lib = { path = "/home/arst/DavidNichol/Endeavors/website_generator/backend/markdown_element_lib" }
+markdown_element_lib = { path = "../../markdown_element_lib" }
 serde = { version = "1.0.217", features = ["derive"] }
 serde_json = "1.0.138"

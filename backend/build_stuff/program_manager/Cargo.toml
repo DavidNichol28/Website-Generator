@@ -4,4 +4,4 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-build_process = { path = "/home/arst/DavidNichol/Endeavors/website_generator/backend/build_stuff/build_process" }
+build_process = { path = "../build_process" }
