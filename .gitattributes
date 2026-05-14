@@ -1,2 +1,3 @@
 flutter/** linguist-vendored
 dart_ui/** linguist-vendored
+*.rs linguist-language=Rust
