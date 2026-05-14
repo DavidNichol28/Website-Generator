@@ -21,25 +21,59 @@ pub enum MarkdownToken {
     String(String),
     NexusPointer(NexusPointer),
 }
+fn remove_escape_slashes(input: &str) -> String {
+    let mut result = String::new();
+    let mut escaped = false;
 
+    for c in input.chars() {
+        if escaped {
+            result.push(c);
+            escaped = false;
+        } else if c == '\\' {
+            escaped = true;
+        } else {
+            result.push(c);
+        }
+    }
+
+    // Preserve trailing slash if dangling
+    if escaped {
+        result.push('\\');
+    }
+
+    result
+}
 impl MarkdownToken {
     // New method that creates a MarkdownToken::BoldItalics variant
     pub fn new(token_type: MarkdownTokenType, input: &str) -> MarkdownToken {
         return match token_type {
             MarkdownTokenType::Italics => {
-                MarkdownToken::Italics(Box::new(MarkdownToken::String(input.to_string())))
+                // MarkdownToken::Italics(Box::new(MarkdownToken::String(input.to_string())))
+                MarkdownToken::Italics(Box::new(MarkdownToken::String(remove_escape_slashes(
+                    input,
+                ))))
             }
             MarkdownTokenType::Bold => {
-                MarkdownToken::Bold(Box::new(MarkdownToken::String(input.to_string())))
+                // MarkdownToken::Bold(Box::new(MarkdownToken::String(input.to_string())))
+                MarkdownToken::Bold(Box::new(MarkdownToken::String(remove_escape_slashes(
+                    input,
+                ))))
             }
             MarkdownTokenType::BoldItalicsStart | MarkdownTokenType::BoldItalicsEnd => {
-                MarkdownToken::BoldItalics(Box::new(MarkdownToken::String(input.to_string())))
+                // MarkdownToken::BoldItalics(Box::new(MarkdownToken::String(input.to_string())))
+                MarkdownToken::BoldItalics(Box::new(MarkdownToken::String(remove_escape_slashes(
+                    input,
+                ))))
             }
             MarkdownTokenType::NexusPointerStart | MarkdownTokenType::NexusPointerEnd => {
-                MarkdownToken::NexusPointer(NexusPointer::new(&input))
+                // MarkdownToken::NexusPointer(NexusPointer::new(&input))
+                MarkdownToken::NexusPointer(NexusPointer::new(&remove_escape_slashes(&input)))
             }
             // Add other MarkdownTokenType matches here if you want to handle other cases
-            _ => MarkdownToken::Plain(Box::new(MarkdownToken::String(input.to_string()))),
+            // _ => MarkdownToken::Plain(Box::new(MarkdownToken::String(input.to_string()))),
+            _ => MarkdownToken::Plain(Box::new(MarkdownToken::String(remove_escape_slashes(
+                input,
+            )))),
         };
     }
 
@@ -98,32 +132,81 @@ impl NexusPointer {
     }
 }
 
-/// Extracts the positions of markdown symbols in the input string.
-/// Returns a HashMap where each key is a MarkdownTokenType and the value is a vector of indices.
+fn is_escaped(input: &str, index: usize) -> bool {
+    // Cannot be escaped if at start of string.
+    if index == 0 {
+        return false;
+    }
+
+    let bytes = input.as_bytes();
+
+    // Count consecutive backslashes immediately before index.
+    let mut backslash_count = 0;
+    let mut i = index;
+
+    while i > 0 {
+        i -= 1;
+
+        if bytes[i] == b'\\' {
+            backslash_count += 1;
+        } else {
+            break;
+        }
+    }
+
+    // Odd number of backslashes means escaped.
+    backslash_count % 2 == 1
+}
+
 fn extract_positions(input: &str) -> HashMap<MarkdownTokenType, Vec<usize>> {
     let mut positions: HashMap<MarkdownTokenType, Vec<usize>> = HashMap::new();
 
     // Locate special markdown markers in the input.
     positions.insert(
         MarkdownTokenType::NexusPointerStart,
-        input.match_indices("${").map(|(i, _)| i).collect(),
+        input
+            .match_indices("${")
+            .filter(|(i, _)| !is_escaped(input, *i))
+            .map(|(i, _)| i)
+            .collect(),
     );
+
     positions.insert(
         MarkdownTokenType::NexusPointerEnd,
-        input.match_indices("}$").map(|(i, _)| i).collect(),
+        input
+            .match_indices("}$")
+            .filter(|(i, _)| !is_escaped(input, *i))
+            .map(|(i, _)| i)
+            .collect(),
     );
+
     positions.insert(
         MarkdownTokenType::BoldItalicsStart,
-        input.match_indices("**_").map(|(i, _)| i).collect(),
+        input
+            .match_indices("**_")
+            .filter(|(i, _)| !is_escaped(input, *i))
+            .map(|(i, _)| i)
+            .collect(),
     );
+
     positions.insert(
         MarkdownTokenType::BoldItalicsEnd,
-        input.match_indices("_**").map(|(i, _)| i).collect(),
+        input
+            .match_indices("_**")
+            .filter(|(i, _)| !is_escaped(input, *i))
+            .map(|(i, _)| i)
+            .collect(),
     );
 
     // Filter out ** that are actually part of **_ bold-italics sequences.
-    let bold_indices_raw: Vec<usize> = input.match_indices("**").map(|(i, _)| i).collect();
+    let bold_indices_raw: Vec<usize> = input
+        .match_indices("**")
+        .filter(|(i, _)| !is_escaped(input, *i))
+        .map(|(i, _)| i)
+        .collect();
+
     let mut bold_indices: Vec<usize> = vec![];
+
     for &bold_index in &bold_indices_raw {
         if !positions[&MarkdownTokenType::BoldItalicsStart].contains(&bold_index)
             && !(bold_index > 0
@@ -132,11 +215,18 @@ fn extract_positions(input: &str) -> HashMap<MarkdownTokenType, Vec<usize>> {
             bold_indices.push(bold_index);
         }
     }
+
     positions.insert(MarkdownTokenType::Bold, bold_indices);
 
-    // Identify valid standalone * for italics (not part of bold or bold-italics sequences).
-    let italics_indices_raw: Vec<usize> = input.match_indices("*").map(|(i, _)| i).collect();
+    // Identify valid standalone * for italics.
+    let italics_indices_raw: Vec<usize> = input
+        .match_indices("*")
+        .filter(|(i, _)| !is_escaped(input, *i))
+        .map(|(i, _)| i)
+        .collect();
+
     let mut italics_indices: Vec<usize> = vec![];
+
     for &italics_index in &italics_indices_raw {
         if !positions[&MarkdownTokenType::Bold].contains(&italics_index)
             && !(italics_index > 0
@@ -152,6 +242,7 @@ fn extract_positions(input: &str) -> HashMap<MarkdownTokenType, Vec<usize>> {
             italics_indices.push(italics_index);
         }
     }
+
     positions.insert(MarkdownTokenType::Italics, italics_indices);
 
     positions

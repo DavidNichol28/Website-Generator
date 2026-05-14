@@ -55,7 +55,7 @@
         },
         {
           "Plain": {
-            "String": " = \\$\\{\"String for link\"link_type:link_pointer\\}\\$"
+            "String": " = ${\"String for link\"link_type:link_pointer}$"
           }
         }
       ]

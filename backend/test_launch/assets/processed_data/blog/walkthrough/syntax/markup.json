@@ -55,12 +55,7 @@
         },
         {
           "Plain": {
-            "String": " = \\"
-          }
-        },
-        {
-          "Italics": {
-            "String": "text\\"
+            "String": " = *text*"
           }
         }
       ]
@@ -81,22 +76,7 @@
         },
         {
           "Plain": {
-            "String": " = \\"
-          }
-        },
-        {
-          "Italics": {
-            "String": "\\"
-          }
-        },
-        {
-          "Plain": {
-            "String": "text\\"
-          }
-        },
-        {
-          "Italics": {
-            "String": "\\"
+            "String": " = **text**"
           }
         }
       ]
@@ -117,22 +97,7 @@
         },
         {
           "Plain": {
-            "String": " = \\"
-          }
-        },
-        {
-          "Italics": {
-            "String": "\\"
-          }
-        },
-        {
-          "Plain": {
-            "String": "_word_\\"
-          }
-        },
-        {
-          "Italics": {
-            "String": "\\"
+            "String": " = **_word_**"
           }
         }
       ]
